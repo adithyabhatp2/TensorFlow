@@ -11,6 +11,7 @@ tf.logging.set_verbosity(tf.logging.DEBUG)
 tf.set_random_seed(1024)
 
 N = 100000
+#N = 50000
 
 # Create  a new graph in TensorFlow. A graph contains operators and their
 # dependencies. Think of Graph in TensorFlow as a DAG. Graph is however, a more
@@ -27,6 +28,7 @@ with g.as_default(): # make our graph as the defaul graph
 
     # create a single "matmul" and "trace" operator
     bigtrace = tf.trace(tf.matmul(A, A))
+    #bigtrace = tf.trace(A) #adbhat
 
 
 # Here, we create session. A session is required to run a computation

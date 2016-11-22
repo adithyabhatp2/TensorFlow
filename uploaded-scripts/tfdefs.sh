@@ -28,7 +28,7 @@ function start_cluster() {
     else
         echo "Create $TF_RUN_DIR on remote hosts if they do not exist."
         pdsh -R ssh -w vm-$GROUP_NUM-[1-5] "mkdir -p $TF_RUN_DIR"
-        echo "Copying the script to all the remote hosts."
+        echo "Copying the script $1 to all the remote hosts."
         pdcp -R ssh -w vm-$GROUP_NUM-[1-5] $1 $TF_RUN_DIR
 
         echo "Starting tensorflow servers on all hosts based on the spec in $1"

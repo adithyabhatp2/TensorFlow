@@ -40,8 +40,9 @@ with g.as_default(): # make our graph the default graph
     matrices = {}
     for i in range(0, d):
         for j in range(0, d):
-            matrix_name = get_block_name(i, j)
-            matrices[matrix_name] = tf.random_uniform([M, M], name=matrix_name)
+            with tf.device("/job:worker/task:%d" % int(i%5)): 
+                matrix_name = get_block_name(i, j)
+                matrices[matrix_name] = tf.random_uniform([M, M], name=matrix_name)
 
     # In order the
 
@@ -63,16 +64,17 @@ with g.as_default(): # make our graph the default graph
     retval = tf.add_n(intermediate_traces.values())
 
 
+config = tf.ConfigProto(log_device_placement=True)
 
 # Here, we create session. A session is required to run a computation
 # represented as a graph.
-sess = tf.Session(graph=g) # create a session used to run computations on graph
+sess = tf.Session("grpc://vm-14-2:2222", config=config, graph=g) # create a session used to run computations on graph
 output = sess.run(retval) # executes all necessary operations to find value of retval tensor
 
 # Summary writer is used to write the summary of execution including graph
 # structure into a log directory. By pointing "tensorboard" to this directory,
 # we will be able to graphically view the graph.
-tf.train.SummaryWriter("%s/example_single" % (os.environ.get("TF_LOG_DIR")), sess.graph)
+tf.train.SummaryWriter("%s/example_bigmatmul" % (os.environ.get("TF_LOG_DIR")), sess.graph)
 
 sess.close()
 

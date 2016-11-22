@@ -1,0 +1,2181 @@
+nohup: ignoring input
+I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:197] Initialize GrpcChannelCache for job worker -> {0 -> vm-14-1:2222, 1 -> localhost:2222, 2 -> vm-14-3:2222, 3 -> vm-14-4:2222, 4 -> vm-14-5:2222}
+I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:206] Started server with target: grpc://localhost:2222
+I tensorflow/core/distributed_runtime/master_session.cc:928] Start master session b13da79d5ba802fd with config: 
+log_device_placement: true
+
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-9/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-9/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-9/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-9/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-9: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_99: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_99/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_99: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-8/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-8/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-8/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-8/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-8: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-7/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-7/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-7/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-7/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-7: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-6/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-6/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-6/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-6/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-6: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-5/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-5/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-5/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-5/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-5: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-4/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-4/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-4/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-4/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-4: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-3/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-3/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-3/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-3/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-3: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-2/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-2/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-2/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-2/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-2: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-1/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-1/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-1/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-1/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-1: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-9/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-9/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-9/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-9/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-9: /job:worker/replica:0/task:4/cpu:0
+MatMul_99: /job:worker/replica:0/task:0/cpu:0
+Trace_99/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_99: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-9-8/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-8/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-8/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-8/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-8: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-7/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-7/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-7/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-7/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-7: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-6/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-6/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-6/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-6/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-6: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-5/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-5/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-5/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-5/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-5: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-4/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-4/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-4/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-4/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-4: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-3/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-3/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-3/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-3/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-3: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-2/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-2/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-2/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-2/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-2: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-1/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-1/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-1/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-1/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-1: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-0/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-0/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-0/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-0/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-0: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-8-9/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-9/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-9/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-9/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-9: /job:worker/replica:0/task:3/cpu:0
+MatMul_98: /job:worker/replica:0/task:0/cpu:0
+Trace_98/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_98: /job:worker/replica:0/task:0/cpu:0
+MatMul_89: /job:worker/replica:0/task:0/cpu:0
+Trace_89/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_89: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-8-8/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-8/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-8/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-8/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-8: /job:worker/replica:0/task:3/cpu:0
+MatMul_88: /job:worker/replica:0/task:0/cpu:0
+Trace_88/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_88: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-8-7/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-7/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-7/RandomUniform: /jobI tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-0/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-0/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-0/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-0/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-0: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-9/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-9/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-9/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-9/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-9: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_98: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_98/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_98: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_89: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_89/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_89: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-8/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-8/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-8/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-8/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-8: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_88: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_88/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_88: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-7/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-7/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-7/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-7/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-7: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-6/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-6/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-6/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-6/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-6: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-5/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-5/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-5/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-5/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-5: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-4/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-4/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-4/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-4/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-4: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-3/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-3/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-3/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-3/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-3: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-2/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-2/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-2/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-2/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-2: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-1/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-1/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-1/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-1/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-1: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-0/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-0/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-0/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-0/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-0: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-9/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-9/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-9/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-9/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-9: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_97: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_97/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_97: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_79: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_79/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_79: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-8/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-8/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-8/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-8/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-8: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_87: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_87/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_87: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_78: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_78/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_78: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-7/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-7/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-7/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-7/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-7: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_77: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_77/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_77: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-6/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-6/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-6/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-6/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-6: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-5/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-5/sub: /job:worker/replica:0/task:2/cpu:0
+:worker/replica:0/task:3/cpu:0
+sub-matrix-8-7/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-7: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-6/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-6/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-6/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-6/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-6: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-5/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-5/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-5/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-5/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-5: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-4/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-4/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-4/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-4/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-4: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-3/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-3/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-3/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-3/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-3: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-2/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-2/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-2/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-2/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-2: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-1/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-1/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-1/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-1/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-1: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-0/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-0/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-0/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-0/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-0: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-7-9/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-9/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-9/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-9/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-9: /job:worker/replica:0/task:2/cpu:0
+MatMul_97: /job:worker/replica:0/task:0/cpu:0
+Trace_97/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_97: /job:worker/replica:0/task:0/cpu:0
+MatMul_79: /job:worker/replica:0/task:0/cpu:0
+Trace_79/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_79: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-7-8/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-8/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-8/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-8/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-8: /job:worker/replica:0/task:2/cpu:0
+MatMul_87: /job:worker/replica:0/task:0/cpu:0
+Trace_87/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_87: /job:worker/replica:0/task:0/cpu:0
+MatMul_78: /job:worker/replica:0/task:0/cpu:0
+Trace_78/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_78: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-7-7/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-7/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-7/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-7/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-7: /job:worker/replica:0/task:2/cpu:0
+MatMul_77: /job:worker/replica:0/task:0/cpu:0
+Trace_77/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_77: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-7-6/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-6/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-6/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-6/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-6: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-5/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-5/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-5/RandomUniform: /joI tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-5/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-5/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-5: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-4/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-4/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-4/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-4/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-4: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-3/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-3/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-3/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-3/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-3: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-2/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-2/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-2/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-2/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-2: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-1/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-1/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-1/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-1/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-1: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-0/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-0/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-0/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-0/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-0: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-9/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-9/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-9/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-9/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-9: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_96: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_96/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_96: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_69: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_69/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_69: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-8/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-8/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-8/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-8/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-8: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_86: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_86/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_86: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_68: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_68/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_68: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-7/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-7/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-7/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-7/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-7: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_76: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_76/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_76: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_67: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_67/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_67: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-6/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-6/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-6/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-6/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-6: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_66: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_66/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_66: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-5/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-5/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-5/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-5/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-5: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-4/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-4/sub: /job:worker/replica:0/task:1/cpu:0
+b:worker/replica:0/task:2/cpu:0
+sub-matrix-7-5/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-5: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-4/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-4/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-4/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-4/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-4: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-3/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-3/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-3/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-3/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-3: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-2/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-2/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-2/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-2/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-2: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-1/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-1/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-1/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-1/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-1: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-0/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-0/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-0/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-0/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-0: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-6-9/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-9/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-9/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-9/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-9: /job:worker/replica:0/task:1/cpu:0
+MatMul_96: /job:worker/replica:0/task:0/cpu:0
+Trace_96/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_96: /job:worker/replica:0/task:0/cpu:0
+MatMul_69: /job:worker/replica:0/task:0/cpu:0
+Trace_69/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_69: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-6-8/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-8/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-8/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-8/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-8: /job:worker/replica:0/task:1/cpu:0
+MatMul_86: /job:worker/replica:0/task:0/cpu:0
+Trace_86/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_86: /job:worker/replica:0/task:0/cpu:0
+MatMul_68: /job:worker/replica:0/task:0/cpu:0
+Trace_68/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_68: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-6-7/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-7/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-7/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-7/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-7: /job:worker/replica:0/task:1/cpu:0
+MatMul_76: /job:worker/replica:0/task:0/cpu:0
+Trace_76/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_76: /job:worker/replica:0/task:0/cpu:0
+MatMul_67: /job:worker/replica:0/task:0/cpu:0
+Trace_67/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_67: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-6-6/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-6/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-6/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-6/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-6: /job:worker/replica:0/task:1/cpu:0
+MatMul_66: /job:worker/replica:0/task:0/cpu:0
+Trace_66/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_66: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-6-5/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-5/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-5/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-5/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-5: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-4/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-4/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-4/RandomUnI tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-4/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-4/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-4: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-3/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-3/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-3/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-3/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-3: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-2/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-2/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-2/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-2/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-2: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-1/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-1/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-1/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-1/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-1: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-0/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-0/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-0/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-0/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-0: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-9/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-9/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-9/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-9/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-9: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_95: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_95/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_95: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_59: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_59/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_59: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-8/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-8/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-8/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-8/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-8: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_85: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_85/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_85: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_58: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_58/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_58: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-7/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-7/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-7/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-7/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-7: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_75: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_75/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_75: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_57: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_57/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_57: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-6/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-6/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-6/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-6/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-6: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_65: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_65/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_65: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_56: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_56/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_56: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-5/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-5/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-5/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-5/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-5: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_55: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_55/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_55: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-4/min: /job:worker/replica:0/task:0/cpu:0
+iform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-4/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-4: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-3/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-3/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-3/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-3/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-3: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-2/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-2/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-2/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-2/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-2: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-1/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-1/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-1/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-1/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-1: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-0/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-0/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-0/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-0/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-0: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-5-9/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-9/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-9/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-9/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-9: /job:worker/replica:0/task:0/cpu:0
+MatMul_95: /job:worker/replica:0/task:0/cpu:0
+Trace_95/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_95: /job:worker/replica:0/task:0/cpu:0
+MatMul_59: /job:worker/replica:0/task:0/cpu:0
+Trace_59/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_59: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-8/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-8/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-8/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-8/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-8: /job:worker/replica:0/task:0/cpu:0
+MatMul_85: /job:worker/replica:0/task:0/cpu:0
+Trace_85/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_85: /job:worker/replica:0/task:0/cpu:0
+MatMul_58: /job:worker/replica:0/task:0/cpu:0
+Trace_58/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_58: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-7/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-7/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-7/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-7/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-7: /job:worker/replica:0/task:0/cpu:0
+MatMul_75: /job:worker/replica:0/task:0/cpu:0
+Trace_75/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_75: /job:worker/replica:0/task:0/cpu:0
+MatMul_57: /job:worker/replica:0/task:0/cpu:0
+Trace_57/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_57: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-6/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-6/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-6/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-6/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-6: /job:worker/replica:0/task:0/cpu:0
+MatMul_65: /job:worker/replica:0/task:0/cpu:0
+Trace_65/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_65: /job:worker/replica:0/task:0/cpu:0
+MatMul_56: /job:worker/replica:0/task:0/cpu:0
+Trace_56/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_56: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-5/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-5/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-5/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-5/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-5: /job:worker/replica:0/task:0/cpu:0
+MatMul_55: /job:worker/replica:0/task:0/cpu:0
+Trace_55/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_55: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-4/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-4/sub: /job:worker/replica:0/task:0/cpu:0
+sub-I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-4/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-4/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-4/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-4: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-3/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-3/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-3/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-3/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-3: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-2/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-2/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-2/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-2/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-2: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-1/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-1/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-1/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-1/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-1: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-0/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-0/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-0/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-0/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-0: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-9/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-9/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-9/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-9/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-9: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_94: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_94/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_94: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_49: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_49/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_49: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-8/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-8/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-8/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-8/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-8: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_84: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_84/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_84: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_48: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_48/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_48: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-7/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-7/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-7/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-7/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-7: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_74: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_74/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_74: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_47: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_47/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_47: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-6/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-6/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-6/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-6/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-6: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_64: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_64/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_64: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_46: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_46/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_46: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-5/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-5/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-5/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-5/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-5: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_54: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_54/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_54: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_45: /job:worker/replica:0/task:0/cpu:0
+matrix-5-4/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-4/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-4: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-3/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-3/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-3/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-3/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-3: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-2/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-2/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-2/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-2/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-2: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-1/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-1/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-1/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-1/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-1: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-0/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-0/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-0/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-0/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-0: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-9/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-9/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-9/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-9/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-9: /job:worker/replica:0/task:4/cpu:0
+MatMul_94: /job:worker/replica:0/task:0/cpu:0
+Trace_94/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_94: /job:worker/replica:0/task:0/cpu:0
+MatMul_49: /job:worker/replica:0/task:0/cpu:0
+Trace_49/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_49: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-8/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-8/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-8/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-8/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-8: /job:worker/replica:0/task:4/cpu:0
+MatMul_84: /job:worker/replica:0/task:0/cpu:0
+Trace_84/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_84: /job:worker/replica:0/task:0/cpu:0
+MatMul_48: /job:worker/replica:0/task:0/cpu:0
+Trace_48/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_48: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-7/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-7/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-7/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-7/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-7: /job:worker/replica:0/task:4/cpu:0
+MatMul_74: /job:worker/replica:0/task:0/cpu:0
+Trace_74/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_74: /job:worker/replica:0/task:0/cpu:0
+MatMul_47: /job:worker/replica:0/task:0/cpu:0
+Trace_47/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_47: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-6/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-6/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-6/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-6/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-6: /job:worker/replica:0/task:4/cpu:0
+MatMul_64: /job:worker/replica:0/task:0/cpu:0
+Trace_64/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_64: /job:worker/replica:0/task:0/cpu:0
+MatMul_46: /job:worker/replica:0/task:0/cpu:0
+Trace_46/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_46: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-5/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-5/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-5/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-5/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-5: /job:worker/replica:0/task:4/cpu:0
+MatMul_54: /job:worker/replica:0/task:0/cpu:0
+Trace_54/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_54: /job:worker/replica:0/task:0/cpu:0
+MatMul_45: /job:worker/replica:0/task:0/cpu:0
+Trace_45/DiagPart: /job:worker/replica:0/task:0/cI tensorflow/core/common_runtime/simple_placer.cc:819] Trace_45/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_45: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-4/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-4/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-4/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-4/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-4: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_44: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_44/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_44: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-3/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-3/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-3/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-3/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-3: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-2/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-2/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-2/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-2/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-2: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-1/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-1/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-1/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-1/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-1: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-0/min: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-0/sub: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-0/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-0/mul: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-0: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-9/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-9/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-9/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-9/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-9: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_93: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_93/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_93: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_39: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_39/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_39: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-8/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-8/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-8/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-8/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-8: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_83: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_83/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_83: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_38: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_38/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_38: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-7/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-7/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-7/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-7/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-7: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_73: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_73/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_73: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_37: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_37/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_37: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-6/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-6/sub: /job:worker/replica:0/task:3/cpu:0
+pu:0
+Trace_45: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-4/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-4/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-4/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-4/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-4: /job:worker/replica:0/task:4/cpu:0
+MatMul_44: /job:worker/replica:0/task:0/cpu:0
+Trace_44/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_44: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-3/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-3/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-3/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-3/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-3: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-2/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-2/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-2/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-2/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-2: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-1/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-1/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-1/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-1/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-1: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-0/min: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-0/sub: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-0/RandomUniform: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-0/mul: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-0: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-3-9/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-9/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-9/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-9/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-9: /job:worker/replica:0/task:3/cpu:0
+MatMul_93: /job:worker/replica:0/task:0/cpu:0
+Trace_93/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_93: /job:worker/replica:0/task:0/cpu:0
+MatMul_39: /job:worker/replica:0/task:0/cpu:0
+Trace_39/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_39: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-3-8/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-8/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-8/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-8/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-8: /job:worker/replica:0/task:3/cpu:0
+MatMul_83: /job:worker/replica:0/task:0/cpu:0
+Trace_83/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_83: /job:worker/replica:0/task:0/cpu:0
+MatMul_38: /job:worker/replica:0/task:0/cpu:0
+Trace_38/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_38: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-3-7/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-7/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-7/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-7/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-7: /job:worker/replica:0/task:3/cpu:0
+MatMul_73: /job:worker/replica:0/task:0/cpu:0
+Trace_73/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_73: /job:worker/replica:0/task:0/cpu:0
+MatMul_37: /job:worker/replica:0/task:0/cpu:0
+Trace_37/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_37: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-3-6/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-6/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-6/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-6/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-6: /job:worker/replica:0/task:3/cpu:0
+MatMul_63: /job:worker/replica:0/task:0/cpu:0
+Trace_63/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_63: /job:worker/replica:0/task:0/cpu:0
+MatMul_36: /job:worker/replica:0/task:0/cpu:0
+Trace_36/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_36: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-3-5/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-5/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-5/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-5/mul: /job:worker/repliI tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-6/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-6/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-6: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_63: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_63/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_63: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_36: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_36/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_36: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-5/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-5/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-5/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-5/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-5: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_53: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_53/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_53: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_35: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_35/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_35: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-4/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-4/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-4/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-4/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-4: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_43: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_43/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_43: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_34: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_34/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_34: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-3/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-3/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-3/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-3/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-3: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_33: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_33/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_33: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-2/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-2/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-2/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-2/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-2: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-1/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-1/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-1/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-1/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-1: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-0/min: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-0/sub: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-0/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-0/mul: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-0: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-9/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-9/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-9/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-9/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-9: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_92: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_92/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_92: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_29: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_29/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_29: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-8/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-8/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-8/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-8/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-8: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_82: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_82/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_82: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_28: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_28/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_28: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-7/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-7/sub: /job:worker/replica:0/task:2/cpu:0
+ca:0/task:3/cpu:0
+sub-matrix-3-5: /job:worker/replica:0/task:3/cpu:0
+MatMul_53: /job:worker/replica:0/task:0/cpu:0
+Trace_53/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_53: /job:worker/replica:0/task:0/cpu:0
+MatMul_35: /job:worker/replica:0/task:0/cpu:0
+Trace_35/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_35: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-3-4/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-4/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-4/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-4/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-4: /job:worker/replica:0/task:3/cpu:0
+MatMul_43: /job:worker/replica:0/task:0/cpu:0
+Trace_43/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_43: /job:worker/replica:0/task:0/cpu:0
+MatMul_34: /job:worker/replica:0/task:0/cpu:0
+Trace_34/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_34: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-3-3/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-3/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-3/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-3/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-3: /job:worker/replica:0/task:3/cpu:0
+MatMul_33: /job:worker/replica:0/task:0/cpu:0
+Trace_33/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_33: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-3-2/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-2/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-2/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-2/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-2: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-1/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-1/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-1/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-1/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-1: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-0/min: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-0/sub: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-0/RandomUniform: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-0/mul: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-0: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-2-9/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-9/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-9/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-9/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-9: /job:worker/replica:0/task:2/cpu:0
+MatMul_92: /job:worker/replica:0/task:0/cpu:0
+Trace_92/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_92: /job:worker/replica:0/task:0/cpu:0
+MatMul_29: /job:worker/replica:0/task:0/cpu:0
+Trace_29/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_29: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-8/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-8/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-8/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-8/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-8: /job:worker/replica:0/task:2/cpu:0
+MatMul_82: /job:worker/replica:0/task:0/cpu:0
+Trace_82/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_82: /job:worker/replica:0/task:0/cpu:0
+MatMul_28: /job:worker/replica:0/task:0/cpu:0
+Trace_28/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_28: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-7/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-7/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-7/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-7/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-7: /job:worker/replica:0/task:2/cpu:0
+MatMul_72: /job:worker/replica:0/task:0/cpu:0
+Trace_72/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_72: /job:worker/replica:0/task:0/cpu:0
+MatMul_27: /job:worker/replica:0/task:0/cpu:0
+Trace_27/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_27: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-6/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-6/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-6/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matriI tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-7/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-7/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-7: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_72: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_72/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_72: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_27: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_27/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_27: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-6/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-6/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-6/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-6/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-6: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_62: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_62/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_62: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_26: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_26/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_26: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-5/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-5/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-5/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-5/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-5: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_52: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_52/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_52: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_25: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_25/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_25: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-4/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-4/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-4/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-4/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-4: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_42: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_42/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_42: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_24: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_24/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_24: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-3/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-3/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-3/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-3/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-3: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_32: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_32/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_32: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_23: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_23/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_23: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-2/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-2/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-2/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-2/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-2: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_22: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_22/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_22: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-1/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-1/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-1/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-1/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-1: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-0/min: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-0/sub: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-0/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-0/mul: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-0: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-9/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-9/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-9/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-9/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-9: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_91: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_91/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_91: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_19: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_19/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_19: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-8/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-8/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-8/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-8/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-8: /job:worker/replica:0/task:1/cpu:0
+x-2-6/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-6: /job:worker/replica:0/task:2/cpu:0
+MatMul_62: /job:worker/replica:0/task:0/cpu:0
+Trace_62/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_62: /job:worker/replica:0/task:0/cpu:0
+MatMul_26: /job:worker/replica:0/task:0/cpu:0
+Trace_26/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_26: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-5/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-5/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-5/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-5/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-5: /job:worker/replica:0/task:2/cpu:0
+MatMul_52: /job:worker/replica:0/task:0/cpu:0
+Trace_52/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_52: /job:worker/replica:0/task:0/cpu:0
+MatMul_25: /job:worker/replica:0/task:0/cpu:0
+Trace_25/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_25: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-4/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-4/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-4/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-4/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-4: /job:worker/replica:0/task:2/cpu:0
+MatMul_42: /job:worker/replica:0/task:0/cpu:0
+Trace_42/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_42: /job:worker/replica:0/task:0/cpu:0
+MatMul_24: /job:worker/replica:0/task:0/cpu:0
+Trace_24/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_24: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-3/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-3/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-3/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-3/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-3: /job:worker/replica:0/task:2/cpu:0
+MatMul_32: /job:worker/replica:0/task:0/cpu:0
+Trace_32/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_32: /job:worker/replica:0/task:0/cpu:0
+MatMul_23: /job:worker/replica:0/task:0/cpu:0
+Trace_23/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_23: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-2/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-2/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-2/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-2/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-2: /job:worker/replica:0/task:2/cpu:0
+MatMul_22: /job:worker/replica:0/task:0/cpu:0
+Trace_22/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_22: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-2-1/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-1/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-1/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-1/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-1: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-0/min: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-0/sub: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-0/RandomUniform: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-0/mul: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-0: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-1-9/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-9/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-9/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-9/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-9: /job:worker/replica:0/task:1/cpu:0
+MatMul_91: /job:worker/replica:0/task:0/cpu:0
+Trace_91/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_91: /job:worker/replica:0/task:0/cpu:0
+MatMul_19: /job:worker/replica:0/task:0/cpu:0
+Trace_19/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_19: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-8/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-8/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-8/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-8/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-8: /job:worker/replica:0/task:1/cpu:0
+MatMul_81: /job:worker/replica:0/task:0/cpu:0
+Trace_81/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_81: /job:worker/replica:0/task:0/cpu:0
+MatMul_18: I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_81: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_81/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_81: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_18: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_18/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_18: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-7/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-7/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-7/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-7/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-7: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_71: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_71/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_71: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_17: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_17/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_17: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-6/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-6/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-6/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-6/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-6: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_61: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_61/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_61: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_16: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_16/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_16: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-5/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-5/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-5/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-5/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-5: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_51: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_51/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_51: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_15: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_15/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_15: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-4/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-4/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-4/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-4/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-4: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_41: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_41/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_41: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_14: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_14/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_14: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-3/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-3/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-3/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-3/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-3: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_31: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_31/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_31: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_13: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_13/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_13: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-2/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-2/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-2/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-2/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-2: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_21: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_21/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_21: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_12: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_12/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_12: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-1/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-1/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-1/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-1/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-1: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_11: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_11/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_11: /job:worker/replica:0/task:0/cpu:0
+/job:worker/replica:0/task:0/cpu:0
+Trace_18/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_18: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-7/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-7/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-7/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-7/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-7: /job:worker/replica:0/task:1/cpu:0
+MatMul_71: /job:worker/replica:0/task:0/cpu:0
+Trace_71/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_71: /job:worker/replica:0/task:0/cpu:0
+MatMul_17: /job:worker/replica:0/task:0/cpu:0
+Trace_17/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_17: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-6/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-6/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-6/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-6/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-6: /job:worker/replica:0/task:1/cpu:0
+MatMul_61: /job:worker/replica:0/task:0/cpu:0
+Trace_61/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_61: /job:worker/replica:0/task:0/cpu:0
+MatMul_16: /job:worker/replica:0/task:0/cpu:0
+Trace_16/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_16: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-5/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-5/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-5/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-5/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-5: /job:worker/replica:0/task:1/cpu:0
+MatMul_51: /job:worker/replica:0/task:0/cpu:0
+Trace_51/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_51: /job:worker/replica:0/task:0/cpu:0
+MatMul_15: /job:worker/replica:0/task:0/cpu:0
+Trace_15/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_15: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-4/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-4/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-4/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-4/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-4: /job:worker/replica:0/task:1/cpu:0
+MatMul_41: /job:worker/replica:0/task:0/cpu:0
+Trace_41/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_41: /job:worker/replica:0/task:0/cpu:0
+MatMul_14: /job:worker/replica:0/task:0/cpu:0
+Trace_14/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_14: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-3/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-3/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-3/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-3/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-3: /job:worker/replica:0/task:1/cpu:0
+MatMul_31: /job:worker/replica:0/task:0/cpu:0
+Trace_31/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_31: /job:worker/replica:0/task:0/cpu:0
+MatMul_13: /job:worker/replica:0/task:0/cpu:0
+Trace_13/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_13: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-2/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-2/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-2/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-2/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-2: /job:worker/replica:0/task:1/cpu:0
+MatMul_21: /job:worker/replica:0/task:0/cpu:0
+Trace_21/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_21: /job:worker/replica:0/task:0/cpu:0
+MatMul_12: /job:worker/replica:0/task:0/cpu:0
+Trace_12/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_12: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-1/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-1/sub: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-1/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-1/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-1: /job:worker/replica:0/task:1/cpu:0
+MatMul_11: /job:worker/replica:0/task:0/cpu:0
+Trace_11/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_11: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-0/min: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-0/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-0/min: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-0/sub: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-0/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-0/mul: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-0: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-9/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-9/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-9/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-9/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-9: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_90: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_90/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_90: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_9: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_9/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_9: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-8/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-8/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-8/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-8/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-8: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_80: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_80/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_80: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_8: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_8/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_8: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-7/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-7/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-7/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-7/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-7: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_70: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_70/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_70: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_7: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_7/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_7: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-6/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-6/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-6/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-6/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-6: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_60: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_60/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_60: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_6: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_6/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_6: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-5/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-5/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-5/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-5/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-5: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_50: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_50/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_50: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_5: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_5/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_5: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-4/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-4/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-4/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-4/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-4: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_40: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_40/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_40: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_4: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_4/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_4: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-3/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-3/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-3/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-3/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-3: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_30: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_30/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_30: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_3: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-1-0/RandomUniform: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-0/mul: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-0: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-0-9/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-9/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-9/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-9/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-9: /job:worker/replica:0/task:0/cpu:0
+MatMul_90: /job:worker/replica:0/task:0/cpu:0
+Trace_90/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_90: /job:worker/replica:0/task:0/cpu:0
+MatMul_9: /job:worker/replica:0/task:0/cpu:0
+Trace_9/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_9: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-8/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-8/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-8/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-8/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-8: /job:worker/replica:0/task:0/cpu:0
+MatMul_80: /job:worker/replica:0/task:0/cpu:0
+Trace_80/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_80: /job:worker/replica:0/task:0/cpu:0
+MatMul_8: /job:worker/replica:0/task:0/cpu:0
+Trace_8/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_8: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-7/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-7/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-7/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-7/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-7: /job:worker/replica:0/task:0/cpu:0
+MatMul_70: /job:worker/replica:0/task:0/cpu:0
+Trace_70/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_70: /job:worker/replica:0/task:0/cpu:0
+MatMul_7: /job:worker/replica:0/task:0/cpu:0
+Trace_7/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_7: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-6/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-6/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-6/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-6/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-6: /job:worker/replica:0/task:0/cpu:0
+MatMul_60: /job:worker/replica:0/task:0/cpu:0
+Trace_60/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_60: /job:worker/replica:0/task:0/cpu:0
+MatMul_6: /job:worker/replica:0/task:0/cpu:0
+Trace_6/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_6: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-5/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-5/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-5/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-5/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-5: /job:worker/replica:0/task:0/cpu:0
+MatMul_50: /job:worker/replica:0/task:0/cpu:0
+Trace_50/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_50: /job:worker/replica:0/task:0/cpu:0
+MatMul_5: /job:worker/replica:0/task:0/cpu:0
+Trace_5/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_5: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-4/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-4/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-4/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-4/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-4: /job:worker/replica:0/task:0/cpu:0
+MatMul_40: /job:worker/replica:0/task:0/cpu:0
+Trace_40/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_40: /job:worker/replica:0/task:0/cpu:0
+MatMul_4: /job:worker/replica:0/task:0/cpu:0
+Trace_4/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_4: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-3/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-3/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-3/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-3/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-3: /job:worker/replica:0/task:0/cpu:0
+MatMul_30: /job:worker/replica:0/task:0/cpu:0
+Trace_30/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_30: /job:worker/replica:0/task:0/cpu:0
+MatMul_3: /job:worker/replica:0/task:0/cpu:0
+Trace_3/DiagPart: /job:worker/replica:0/task:0I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_3/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_3: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-2/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-2/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-2/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-2/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-2: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_20: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_20/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_20: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_2: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_2/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_2: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-1/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-1/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-1/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-1/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-1: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_10: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_10/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_10: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul_1: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_1/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_1: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-0/min: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-0/sub: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-0/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-0/mul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-0: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] MatMul: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace/DiagPart: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] AddN: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_99/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_98/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_97/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_96/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_95/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_94/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_93/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_92/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_91/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_90/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_89/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_88/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_87/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_86/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_85/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_84/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_83/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_82/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_81/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_80/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_79/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_78/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_77/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_76/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_75/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_74/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_73/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_72/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_71/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_70/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_69/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_68/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_67/Const: /job:worker/replica:0/task:0/cpu:0
+/cpu:0
+Trace_3: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-2/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-2/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-2/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-2/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-2: /job:worker/replica:0/task:0/cpu:0
+MatMul_20: /job:worker/replica:0/task:0/cpu:0
+Trace_20/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_20: /job:worker/replica:0/task:0/cpu:0
+MatMul_2: /job:worker/replica:0/task:0/cpu:0
+Trace_2/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_2: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-1/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-1/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-1/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-1/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-1: /job:worker/replica:0/task:0/cpu:0
+MatMul_10: /job:worker/replica:0/task:0/cpu:0
+Trace_10/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_10: /job:worker/replica:0/task:0/cpu:0
+MatMul_1: /job:worker/replica:0/task:0/cpu:0
+Trace_1/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace_1: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-0/min: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-0/sub: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-0/RandomUniform: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-0/mul: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-0-0: /job:worker/replica:0/task:0/cpu:0
+MatMul: /job:worker/replica:0/task:0/cpu:0
+Trace/DiagPart: /job:worker/replica:0/task:0/cpu:0
+Trace: /job:worker/replica:0/task:0/cpu:0
+AddN: /job:worker/replica:0/task:0/cpu:0
+Trace_99/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_98/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_97/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_96/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_95/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_94/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_93/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_92/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_91/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_90/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_89/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_88/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_87/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_86/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_85/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_84/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_83/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_82/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_81/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_80/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_79/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_78/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_77/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_76/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_75/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_74/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_73/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_72/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_71/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_70/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_69/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_68/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_67/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_66/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_65/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_64/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_63/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_62/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_61/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_60/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_59/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_58/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_57/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_56/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_55/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_54/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_53/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_52/Const: /job:worker/replica:0/task:0/cpu:0
+TraI tensorflow/core/common_runtime/simple_placer.cc:819] Trace_66/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_65/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_64/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_63/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_62/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_61/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_60/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_59/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_58/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_57/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_56/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_55/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_54/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_53/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_52/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_51/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_50/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_49/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_48/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_47/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_46/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_45/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_44/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_43/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_42/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_41/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_40/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_39/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_38/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_37/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_36/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_35/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_34/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_33/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_32/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_31/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_30/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_29/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_28/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_27/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_26/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_25/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_24/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_23/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_22/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_21/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_20/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_19/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_18/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_17/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_16/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_15/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_14/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_13/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_12/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_11/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_10/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_9/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_8/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_7/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_6/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_5/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_4/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_3/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_2/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace_1/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] Trace/Const: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-9/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-9/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-8/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-8/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-7/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-7/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-6/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-6/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-5/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-5/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-4/max: /job:worker/replica:0/task:4/cpu:0
+ce_51/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_50/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_49/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_48/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_47/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_46/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_45/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_44/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_43/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_42/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_41/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_40/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_39/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_38/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_37/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_36/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_35/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_34/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_33/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_32/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_31/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_30/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_29/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_28/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_27/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_26/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_25/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_24/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_23/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_22/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_21/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_20/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_19/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_18/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_17/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_16/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_15/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_14/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_13/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_12/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_11/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_10/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_9/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_8/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_7/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_6/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_5/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_4/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_3/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_2/Const: /job:worker/replica:0/task:0/cpu:0
+Trace_1/Const: /job:worker/replica:0/task:0/cpu:0
+Trace/Const: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-9-9/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-9/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-8/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-8/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-7/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-7/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-6/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-6/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-5/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-5/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-4/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-4/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-3/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-3/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-2/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-2/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-1/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-1/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-0/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-9-0/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-8-9/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-9/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-8/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-8/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-7/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-7/shape: /job:worker/replica:0/task:3/cpu:0
+subI tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-4/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-3/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-3/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-2/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-2/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-1/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-1/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-0/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-9-0/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-9/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-9/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-8/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-8/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-7/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-7/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-6/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-6/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-5/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-5/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-4/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-4/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-3/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-3/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-2/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-2/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-1/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-1/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-0/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-8-0/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-9/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-9/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-8/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-8/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-7/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-7/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-6/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-6/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-5/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-5/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-4/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-4/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-3/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-3/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-2/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-2/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-1/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-1/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-0/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-7-0/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-9/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-9/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-8/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-8/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-7/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-7/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-6/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-6/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-5/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-5/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-4/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-4/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-3/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-3/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-2/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-2/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-1/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-1/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-0/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-6-0/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-9/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-9/shape: /job:worker/replica:0/task:0/cpu:0
+-matrix-8-6/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-6/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-5/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-5/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-4/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-4/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-3/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-3/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-2/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-2/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-1/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-1/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-0/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-8-0/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-7-9/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-9/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-8/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-8/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-7/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-7/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-6/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-6/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-5/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-5/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-4/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-4/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-3/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-3/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-2/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-2/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-1/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-1/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-0/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-7-0/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-6-9/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-9/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-8/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-8/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-7/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-7/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-6/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-6/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-5/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-5/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-4/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-4/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-3/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-3/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-2/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-2/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-1/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-1/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-0/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-6-0/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-5-9/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-9/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-8/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-8/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-7/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-7/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-6/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-6/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-5/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-5/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-4/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-4/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-3/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-3/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-2/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-2/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-1/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-1/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5-0/max: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-5I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-8/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-8/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-7/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-7/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-6/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-6/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-5/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-5/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-4/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-4/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-3/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-3/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-2/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-2/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-1/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-1/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-0/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-5-0/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-9/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-9/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-8/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-8/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-7/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-7/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-6/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-6/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-5/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-5/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-4/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-4/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-3/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-3/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-2/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-2/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-1/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-1/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-0/max: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-4-0/shape: /job:worker/replica:0/task:4/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-9/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-9/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-8/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-8/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-7/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-7/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-6/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-6/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-5/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-5/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-4/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-4/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-3/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-3/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-2/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-2/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-1/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-1/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-0/max: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-3-0/shape: /job:worker/replica:0/task:3/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-9/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-9/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-8/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-8/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-7/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-7/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-6/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-6/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-5/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-5/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-4/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-4/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-3/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-3/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-2/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-2/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-1/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-1/shape: /job:worker/replica:0/task:2/cpu:0
+-0/shape: /job:worker/replica:0/task:0/cpu:0
+sub-matrix-4-9/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-9/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-8/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-8/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-7/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-7/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-6/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-6/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-5/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-5/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-4/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-4/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-3/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-3/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-2/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-2/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-1/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-1/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-0/max: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-4-0/shape: /job:worker/replica:0/task:4/cpu:0
+sub-matrix-3-9/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-9/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-8/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-8/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-7/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-7/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-6/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-6/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-5/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-5/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-4/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-4/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-3/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-3/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-2/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-2/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-1/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-1/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-0/max: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-3-0/shape: /job:worker/replica:0/task:3/cpu:0
+sub-matrix-2-9/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-9/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-8/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-8/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-7/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-7/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-6/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-6/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-5/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-5/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-4/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-4/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-3/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-3/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-2/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-2/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-1/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-1/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-0/max: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-2-0/shape: /job:worker/replica:0/task:2/cpu:0
+sub-matrix-1-9/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-9/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-8/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-8/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-7/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-7/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-6/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-6/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-5/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-5/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-4/max: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-4/shape: /job:worker/replica:0/task:1/cpu:0
+sub-matrix-1-3/max:I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-0/max: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-2-0/shape: /job:worker/replica:0/task:2/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-9/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-9/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-8/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-8/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-7/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-7/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-6/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-6/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-5/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-5/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-4/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-4/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-3/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-3/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-2/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-2/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-1/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-1/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-0/max: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-1-0/shape: /job:worker/replica:0/task:1/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-9/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-9/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-8/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-8/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-7/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-7/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-6/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-6/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-5/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-5/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-4/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-4/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-3/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-3/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-2/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-2/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-1/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-1/shape: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-0/max: /job:worker/replica:0/task:0/cpu:0
+I tensorflow/core/common_runtime/simple_placer.cc:819] sub-matrix-0-0/shape: /job:worker/replica:0/task:0/cpu:0
+bash: line 1: 12359 Killed                  python startserver.py --task_index=1

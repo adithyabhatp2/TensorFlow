@@ -6,7 +6,7 @@ g = tf.Graph()
 
 with g.as_default():
 
-    # creating a model variable on task 0. This is a process running on node vm-48-1
+    # creating a model variable on task 0. This is a process running on node vm-14-1
     with tf.device("/job:worker/task:0"):
         w = tf.Variable(tf.ones([10, 1]), name="model")
 
@@ -33,7 +33,7 @@ with g.as_default():
         assign_op = w.assign_add(aggregator)
 
 
-    with tf.Session("grpc://vm-48-1:2222") as sess:
+    with tf.Session("grpc://vm-14-1:2222") as sess:
         sess.run(tf.initialize_all_variables())
         for i in range(0, 10):
             sess.run(assign_op)

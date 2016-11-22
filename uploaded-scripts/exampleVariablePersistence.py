@@ -4,7 +4,7 @@ import os
 tf.app.flags.DEFINE_integer("task_index", 0, "Index of the worker task")
 FLAGS = tf.app.flags.FLAGS
 
-# creating a variable on task 0. This is a process running on node vm-48-1
+# creating a variable on task 0. This is a process running on node vm-14-1
 with tf.device("/job:worker/task:0"):
     X = tf.Variable(tf.constant(0.0), name="globalvar")
     pass
@@ -23,7 +23,7 @@ assign2 = Y.assign_add(b)
 
 
 config = tf.ConfigProto(log_device_placement=True)
-with tf.Session("grpc://vm-48-%d:2222" % (FLAGS.task_index + 1), config=config)  as sess:
+with tf.Session("grpc://vm-14-%d:2222" % (FLAGS.task_index + 1), config=config)  as sess:
 
     tf.train.SummaryWriter("%s/asyncsgd" % (os.environ.get("TF_LOG_DIR")), sess.graph)
 

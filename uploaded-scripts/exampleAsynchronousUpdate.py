@@ -8,7 +8,7 @@ g = tf.Graph()
 
 with g.as_default():
 
-    # creating a model variable on task 0. This is a process running on node vm-48-1
+    # creating a model variable on task 0. This is a process running on node vm-14-1
     with tf.device("/job:worker/task:0"):
         w = tf.Variable(tf.ones([10, 1]), name="model")
 
@@ -27,7 +27,7 @@ with g.as_default():
         assign_op = w.assign_add(tf.mul(local_gradient, 0.001))
 
 
-    with tf.Session("grpc://vm-48-%d:2222" % (FLAGS.task_index+1)) as sess:
+    with tf.Session("grpc://vm-14-%d:2222" % (FLAGS.task_index+1)) as sess:
 
         # only one client initializes the variable
         if FLAGS.task_index == 0:
