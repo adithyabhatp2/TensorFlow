@@ -25,16 +25,16 @@ assign2 = Y.assign_add(b)
 config = tf.ConfigProto(log_device_placement=True)
 with tf.Session("grpc://vm-14-%d:2222" % (FLAGS.task_index + 1), config=config)  as sess:
 
-    tf.train.SummaryWriter("%s/asyncsgd" % (os.environ.get("TF_LOG_DIR")), sess.graph)
+    tf.train.SummaryWriter("%s/example_var_persist" % (os.environ.get("TF_LOG_DIR")), sess.graph)
 
     # variables need to be initialized, if not. if you re-initialize the
     # variables, all previously stored data from other sessions will be lost
-    if False ==  tf.is_variable_initialized(X) or False == tf.is_variable_initialized(Y):
+    if False ==  tf.is_variable_initialized(X).eval() or False == tf.is_variable_initialized(Y).eval():
         sess.run(tf.initialize_all_variables())
 
     # feel free to increment the loop count, if you want to observe variables for
     # longer durations.
-    for i in range(0, 100):
+    for i in range(0, 1000):
         # session can be run to compute the values of multiple
         # tensors/variables. The variables of interest are provided as a list
         # when invoking run.

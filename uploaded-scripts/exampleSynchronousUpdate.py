@@ -1,6 +1,7 @@
 import tensorflow as tf
 import os
 
+tf.logging.set_verbosity(tf.logging.DEBUG)
 
 g = tf.Graph()
 
@@ -33,9 +34,11 @@ with g.as_default():
         assign_op = w.assign_add(aggregator)
 
 
-    with tf.Session("grpc://vm-14-1:2222") as sess:
+    with tf.Session("grpc://vm-14-1:2222", config=tf.ConfigProto(log_device_placement=True)) as sess:
         sess.run(tf.initialize_all_variables())
         for i in range(0, 10):
             sess.run(assign_op)
             print w.eval()
+        tf.train.SummaryWriter("%s/parta_2_sync" % (os.environ.get("TF_LOG_DIR")), sess.graph)
         sess.close()
+
