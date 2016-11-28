@@ -13,8 +13,9 @@ tf.logging.set_verbosity(tf.logging.DEBUG)
 tf.set_random_seed(1024)
 
 N = 100000 # dimension of the matrix
-N = 10000
+N = 100000 #adbhat
 d = 10 # number of splits along one dimension. Thus, we will have 100 blocks
+#d = 100 #adbhat
 M = int(N / d)
 
 
@@ -32,7 +33,7 @@ def get_intermediate_trace_name(i, j):
 g = tf.Graph()
 
 with g.as_default(): # make our graph the default graph
-
+    tf.set_random_seed(1024)
     # in the following loop, we create operators that generate individual
     # sub-matrices as tensors. Operators and tensors are created using functions
     # like tf.random_uniform, tf.constant are automatically added to the default
@@ -40,9 +41,10 @@ with g.as_default(): # make our graph the default graph
     matrices = {}
     for i in range(0, d):
         for j in range(0, d):
-            with tf.device("/job:worker/task:%d" % int(i%5)): 
+            with tf.device("/job:worker/task:%d" % int((i+j)%5)): 
                 matrix_name = get_block_name(i, j)
                 matrices[matrix_name] = tf.random_uniform([M, M], name=matrix_name)
+                print get_block_name(i, j)
 
     # In order the
 
@@ -55,26 +57,29 @@ with g.as_default(): # make our graph the default graph
     intermediate_traces = {}
     for i in range(0, d):
         for j in range(0, d):
-            A = matrices[get_block_name(i, j)]
-            B = matrices[get_block_name(j, i)]
-            intermediate_traces[get_intermediate_trace_name(i, j)] = tf.trace(tf.matmul(A, B))
+            with tf.device("/job:worker/task:%d" % int((i+j)%5)):
+                A = matrices[get_block_name(i, j)]
+                B = matrices[get_block_name(j, i)]
+                intermediate_traces[get_intermediate_trace_name(i, j)] = tf.trace(tf.matmul(A, B))
+                print get_intermediate_trace_name(i, j)
 
     # here, we add a "add_n" operator that takes output of the "trace" operators as
     # input and produces the "retval" output tensor.
-    retval = tf.add_n(intermediate_traces.values())
+    with tf.device("/job:worker/task:%d" % 0):
+        retval = tf.add_n(intermediate_traces.values())
 
 
 config = tf.ConfigProto(log_device_placement=True)
 
 # Here, we create session. A session is required to run a computation
 # represented as a graph.
-sess = tf.Session("grpc://vm-14-2:2222", config=config, graph=g) # create a session used to run computations on graph
+sess = tf.Session("grpc://vm-14-1:2222", config=config, graph=g) # create a session used to run computations on graph
 output = sess.run(retval) # executes all necessary operations to find value of retval tensor
 
 # Summary writer is used to write the summary of execution including graph
 # structure into a log directory. By pointing "tensorboard" to this directory,
 # we will be able to graphically view the graph.
-tf.train.SummaryWriter("%s/example_bigmatmul" % (os.environ.get("TF_LOG_DIR")), sess.graph)
+tf.train.SummaryWriter("%s/parta_1_bigmatmul" % (os.environ.get("TF_LOG_DIR")), sess.graph)
 
 sess.close()
 

@@ -1,5 +1,8 @@
 # TensorFlow
 
+## Distributed Setup
+https://www.tensorflow.org/versions/r0.11/how_tos/distributed/index.html
+
 ## Logging
 https://www.tensorflow.org/versions/r0.11/tutorials/monitors/index.html
 https://www.tensorflow.org/versions/r0.11/how_tos/summaries_and_tensorboard/index.html

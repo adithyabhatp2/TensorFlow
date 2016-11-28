@@ -4,6 +4,10 @@
 # it contains definition for start_cluster and terminate_cluster
 source tfdefs.sh
 
+export TF_LOG_DIR="/home/ubuntu/tf/logs"
+
+
+echo logging to: ${TF_LOG_DIR}
 # startserver.py has the specifications for the cluster.
 start_cluster startserver.py
 
@@ -15,4 +19,4 @@ python bigmatrixmultiplication.py
 
 
 # defined in tfdefs.sh to terminate the cluster
-terminate_cluster
+# terminate_cluster

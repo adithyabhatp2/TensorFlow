@@ -33,6 +33,7 @@ g = tf.Graph()
 
 with g.as_default(): # make our graph the default graph
 
+    tf.set_random_seed(1024)
     # in the following loop, we create operators that generate individual
     # sub-matrices as tensors. Operators and tensors are created using functions
     # like tf.random_uniform, tf.constant are automatically added to the default
@@ -61,7 +62,6 @@ with g.as_default(): # make our graph the default graph
     # here, we add a "add_n" operator that takes output of the "trace" operators as
     # input and produces the "retval" output tensor.
     retval = tf.add_n(intermediate_traces.values())
-
 
 
 # Here, we create session. A session is required to run a computation
