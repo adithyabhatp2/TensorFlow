@@ -1,4 +1,7 @@
 import tensorflow as tf
+import os
+
+tf.logging.set_verbosity(tf.logging.DEBUG)
 
 # number of features in the criteo dataset after one-hot encoding
 num_features = 33762578
@@ -27,7 +30,7 @@ with g.as_default():
     # TFRecordReader creates an operator in the graph that reads data from queue
     reader = tf.TFRecordReader()
 
-    # Include a read operator with the filenae queue to use. The output is a string
+    # Include a read operator with the filename queue to use. The output is a string
     # Tensor called serialized_example
     _, serialized_example = reader.read(filename_queue)
 
@@ -49,9 +52,11 @@ with g.as_default():
 
     # These print statements are there for you see the type of the following
     # variables
-    print label
-    print index
-    print value
+    print "label : " , label
+    print "index : " , index
+    print "value : " , value
+
+    tf.Print(label, [label], "label is")
 
     # since we parsed a VarLenFeatures, they are returned as SparseTensors.
     # To run operations on then, we first convert them to dense Tensors as below.
@@ -69,8 +74,13 @@ with g.as_default():
     # Effectively, it spins up separate threads to read from the files
     tf.train.start_queue_runners(sess=sess)
 
-    for i in range(0, 20):
+    for i in range(0, 10):
         # every time we call run, a new data point is read from the files
-        output =  sess.run(dense_feature)
-        print output.shape
-        print sum(output)
+        output =  sess.run([dense_feature, label])
+        print "output shape : " , output[0].shape
+        print "sum(op) : " , sum(output[0])
+        print output[1]
+
+    tf.train.SummaryWriter("%s/read_criteo" % (os.environ.get("TF_LOG_DIR")), sess.graph)
+    
+
