@@ -27,11 +27,11 @@ with g.as_default():
             filename_queue = tf.train.string_input_producer([
                 "./data/criteo-tfr-tiny/tfrecords0"+str(i),
             ], num_epochs=None)
-
-
+            
+            
             reader = tf.TFRecordReader()
             _, serialized_example = reader.read(filename_queue)
-
+            
             features = tf.parse_single_example(serialized_example,
                                                features={
                                                 'label': tf.FixedLenFeature([1], dtype=tf.int64),
@@ -42,7 +42,7 @@ with g.as_default():
             label = features['label']
             index = features['index']
             value = features['value']
-
+            
             # since we parsed a VarLenFeatures, they are returned as SparseTensors.
             # To run operations on then, we first convert them to dense Tensors as below.
             # dense_feat is x
@@ -50,10 +50,10 @@ with g.as_default():
                     [num_features,],
                     #tf.constant([33762578, 1], dtype=tf.int64),
                     tf.sparse_tensor_to_dense(value))
-
-
-
-
+            
+            
+            
+            
             # reader = tf.ones([num_features, 1], name="operator_%d" % i)
             # not the gradient compuation here is a random operation. You need
             # to use the right way (as described in assignment 3 desc).
@@ -66,10 +66,9 @@ with g.as_default():
             local_loss = -1 * tf.log(local_sigmoid) #tensor?
             ones = tf.ones([num_features, 1])
             local_gradient = tf.mul(tf.mul(tf.subtract(local_sigmoid,ones),dense_feature),label)
+            gradients.append(tf.mul(local_gradient, tf.constant(eta, shape=[num_features, 1]))
             
-            gradients.append(tf.mul(local_gradient, 0.1))
-
-
+            
     # we create an operator to aggregate the local gradients
     with tf.device("/job:worker/task:0"):
         aggregator = tf.add_n(gradients)
