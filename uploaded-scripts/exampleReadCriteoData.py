@@ -19,11 +19,11 @@ with g.as_default():
 
     # We first define a filename queue comprising 5 files.
     filename_queue = tf.train.string_input_producer([
-        "./data/criteo-tfr-tiny/tfrecords00",
-        "./data/criteo-tfr-tiny/tfrecords01",
-        "./data/criteo-tfr-tiny/tfrecords02",
-        "./data/criteo-tfr-tiny/tfrecords03",
-        "./data/criteo-tfr-tiny/tfrecords04",
+        "./data/criteo-tfr-tiny/tfrecords0"+str(0),
+        "./data/criteo-tfr-tiny/tfrecords0"+str(1),
+        "./data/criteo-tfr-tiny/tfrecords0"+str(2),
+        "./data/criteo-tfr-tiny/tfrecords0"+str(3),
+        "./data/criteo-tfr-tiny/tfrecords0"+str(4),
     ], num_epochs=None)
 
 
