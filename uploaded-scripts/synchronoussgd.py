@@ -21,8 +21,9 @@ with g.as_default():
     # here, they emit predefined tensors. however, they can be defined as reader
     # operators as done in "exampleReadCriteoData.py"
     gradients = []
-    for i in range(0, 5):
-        with tf.device("/job:worker/task:%d" % i):    
+    for i in range(0, 1):
+        with tf.device("/job:worker/task:%d" % i):   
+            #'''
             # We first define a filename queue comprising 5 files.
             filename_queue = tf.train.string_input_producer([
                 "./data/criteo-tfr-tiny/tfrecords0"+str(i),
@@ -46,27 +47,37 @@ with g.as_default():
             # since we parsed a VarLenFeatures, they are returned as SparseTensors.
             # To run operations on then, we first convert them to dense Tensors as below.
             # dense_feat is x
-            dense_feature = tf.sparse_to_dense(tf.sparse_tensor_to_dense(index),
+            dense_feature_temp = tf.sparse_to_dense(tf.sparse_tensor_to_dense(index),
                     [num_features,],
                     #tf.constant([33762578, 1], dtype=tf.int64),
                     tf.sparse_tensor_to_dense(value))
+            dense_feature = tf.reshape(dense_feature_temp, [num_features, 1])
+            label = tf.to_float(label)
+            #'''
             
-            
-            
-            
-            # reader = tf.ones([num_features, 1], name="operator_%d" % i)
+           
             # not the gradient compuation here is a random operation. You need
             # to use the right way (as described in assignment 3 desc).
             # we use this specific example to show that gradient computation
             # requires use of the model
+            # reader = tf.ones([num_features, 1], name="operator_%d" % i)
+            # dense_feature = reader
             # local_gradient = tf.mul(reader, tf.matmul(tf.transpose(w), reader))
+            local_gradient = tf.mul(dense_feature, tf.matmul(tf.transpose(w), dense_feature))
+            
+            # local_gradient = tf.mul(dense_feature, tf.matmul(tf.transpose(w), dense_feature))
+
+            '''
             wtranspx = tf.matmul(tf.transpose(w), dense_feature)
             ywtx = tf.mul(label, wtranspx)
             local_sigmoid = tf.sigmoid(ywtx)
             local_loss = -1 * tf.log(local_sigmoid) #tensor?
             ones = tf.ones([num_features, 1])
-            local_gradient = tf.mul(tf.mul(tf.subtract(local_sigmoid,ones),dense_feature),label)
-            gradients.append(tf.mul(local_gradient, tf.constant(eta, shape=[num_features, 1]))
+            local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid,ones),dense_feature),label)
+            '''
+            gradients.append(tf.mul(local_gradient, eta))
+            
+
             
             
     # we create an operator to aggregate the local gradients
@@ -79,7 +90,9 @@ with g.as_default():
     with tf.Session("grpc://vm-14-1:2222", config=tf.ConfigProto(log_device_placement=True)) as sess:
         sess.run(tf.initialize_all_variables())
         for i in range(0, 10):
-            sess.run(assign_op)
+#            sess.run(assign_op)
+            sess.run(dense_feature)
+            print "output shape : ", output.shape
             print w.eval()
         tf.train.SummaryWriter("%s/sgd_sync" % (os.environ.get("TF_LOG_DIR")), sess.graph)
         sess.close()
