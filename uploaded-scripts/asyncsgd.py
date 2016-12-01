@@ -2,6 +2,9 @@ import tensorflow as tf
 import os
 import time
 
+tf.app.flags.DEFINE_integer("task_index", 0, "Index of the worker task")
+FLAGS = tf.app.flags.FLAGS
+
 tf.logging.set_verbosity(tf.logging.DEBUG)
 
 num_features = 33762578
@@ -18,7 +21,6 @@ def processInputFromFile(serialized_example):
                                            'value': tf.VarLenFeature(dtype=tf.float32),
                                        }
                                        )
-
     label = features['label']
     index = features['index']
     value = features['value']
@@ -75,7 +77,6 @@ with g.as_default():
     with tf.device("/job:worker/task:0"):
         w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals"), name="w_model")
 
-    gradients = []
     for i in range(0, 5):
         with tf.device("/job:worker/task:%d" % i):
             filename_queue = createFileNameQueues(i)
@@ -91,21 +92,18 @@ with g.as_default():
             wtranspx = tf.matmul(tf.transpose(w), dense_feature, name="wTransX")
             ywtx = tf.mul(label, wtranspx, name="ywtx")
             local_sigmoid = tf.sigmoid(ywtx, name="sigmoid")
-            local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
+            local_loss = tf.log(local_sigmoid, name="loss_intermediate")
             ones = tf.ones([num_features, 1])
             local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, ones, name="sig_1"), dense_feature, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
-            gradients.append(tf.mul(local_gradient, eta))
 
     with tf.device("/job:worker/task:0"):
-        aggregator = tf.add_n(gradients, name="aggr_grad")
-        assign_op = w.assign_sub(aggregator)
+        assign_op = w.assign_sub(local_gradient)
 
 
     # as usual we create a session.
     with tf.Session("grpc://vm-14-1:2222", config=tf.ConfigProto(log_device_placement=True)) as sess:
-    # with tf.Session() as sess:
-
-        sess.run(tf.initialize_all_variables())
+        if FLAGS.task_index == 0:
+            sess.run(tf.initialize_all_variables())
 
         coord = tf.train.Coordinator()
         # this is new command and is used to initialize the queue based readers.
@@ -137,6 +135,6 @@ with g.as_default():
         coord.request_stop()
         coord.join(threads)
 
-        tf.train.SummaryWriter("%s/sgd_sync" % (os.environ.get("TF_LOG_DIR")), sess.graph)
+        tf.train.SummaryWriter("%s/sgd_async" % (os.environ.get("TF_LOG_DIR")), sess.graph)
 
 
