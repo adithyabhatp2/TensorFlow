@@ -73,7 +73,7 @@ with g.as_default():
     tf.set_random_seed(1024)
     # creating a model variable on task 0. This is a process running on node vm-14-1
     with tf.device("/job:worker/task:0"):
-        w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals"), name="w_model")
+        w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals", dtype=tf.float32), name="w_model")
 
     gradients = []
     for i in range(0, 5):
@@ -86,19 +86,65 @@ with g.as_default():
             # Tensor called serialized_example
             _, serialized_example = reader.read(filename_queue)
 
-            dense_feature, label = processInputFromFile(serialized_example)
+            features = tf.parse_single_example(serialized_example,
+                                               features={
+                                                   'label': tf.FixedLenFeature([1], dtype=tf.int64),
+                                                   'index': tf.VarLenFeature(dtype=tf.int64),
+                                                   'value': tf.VarLenFeature(dtype=tf.float32),
+                                               }
+                                               )
 
-            wtranspx = tf.matmul(tf.transpose(w), dense_feature, name="wTransX")
+            label = features['label']
+            index = features['index']
+            value = features['value']
+
+            # These print statements are there for you see the type of the following
+            # variables
+            print "label : ", label
+            print ""
+            print "index : ", index
+            print ""
+            print "value : ", value
+            print ""
+
+            # for debug
+            ind_vals = index.values
+            ind_inds = index.indices
+            val_vals = value.values
+
+            val_vals_2d = tf.expand_dims(val_vals,1)
+            w_sparse = tf.gather(w, index.values, name="w_sparse")
+            w_sparse_1d = tf.reshape(w_sparse, [-1], name="w_sparse_1d")
+            w_transp = tf.transpose(w_sparse)
+            w_transp_1d = tf.reshape(w_transp, [-1])
+
+            label = tf.to_float(label, name="label")
+            wtranspx = tf.matmul(w_transp, val_vals_2d, name="wTransX")
             ywtx = tf.mul(label, wtranspx, name="ywtx")
             local_sigmoid = tf.sigmoid(ywtx, name="sigmoid")
             local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
-            ones = tf.ones([num_features, 1])
-            local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, ones, name="sig_1"), dense_feature, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
-            gradients.append(tf.mul(local_gradient, eta))
 
-    with tf.device("/job:worker/task:0"):
-        aggregator = tf.add_n(gradients, name="aggr_grad")
-        assign_op = w.assign_sub(aggregator)
+            local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, 1, name="sig_1"), val_vals, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
+
+            # dense_feature_temp = tf.sparse_to_dense(tf.sparse_tensor_to_dense(index),
+            #                                         [num_features, ],
+            #                                         tf.sparse_tensor_to_dense(value), name="dense_feature_temp")
+            # dense_feature = tf.reshape(dense_feature_temp, [num_features, 1], name="dense_feature")
+
+
+            # dense_feature, label = processInputFromFile(serialized_example)
+
+            # wtranspx = tf.matmul(tf.transpose(w), dense_feature, name="wTransX")
+            # ywtx = tf.mul(label, wtranspx, name="ywtx")
+            # local_sigmoid = tf.sigmoid(ywtx, name="sigmoid")
+            # local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
+            # ones = tf.ones([num_features, 1])
+            # local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, ones, name="sig_1"), dense_feature, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
+            # gradients.append(tf.mul(local_gradient, eta))
+
+    # with tf.device("/job:worker/task:0"):
+    #     aggregator = tf.add_n(gradients, name="aggr_grad")
+    #     assign_op = w.assign_sub(aggregator)
 
 
     # as usual we create a session.
@@ -112,12 +158,11 @@ with g.as_default():
         # Effectively, it spins up separate threads to read from the files
         threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
-        for i in range(0, 20):
+        for i in range(0, 10):
             print i
-            # every time we call run, a new data point is read from the files
-            #output = sess.run([dense_feature, label, local_gradient])
+
+            # output = sess.run([dense_feature, label, local_gradient])
             # print "dense_feature shape : ", output[0].shape
-            # print "sum(dense_feature) : ", sum(output[0])
             # print "label : ", output[1]
             # print "local_gradient shape : ", output[2].shape
 
@@ -127,9 +172,24 @@ with g.as_default():
 
             # output = sess.run(local_loss)
             # print "Local Loss (Error) : ", output[0][0]
-            start = time.time()
-            sess.run(assign_op)
-            print time.time()-start
+
+            # start = time.time()
+            # sess.run(assign_op)
+            # print time.time()-start
+
+            output = sess.run([w_sparse, ind_vals, val_vals, w_sparse_1d, w_transp,w_transp_1d, val_vals_2d,wtranspx,label,ywtx, local_sigmoid, local_gradient])
+            print "w_sparse", output[0].shape
+            print "ind_vals", output[1].shape
+            print "val_vals", output[2].shape
+            print "w_sparse_1d", output[3].shape
+            print "w_transp", output[4].shape
+            print "w_transp_1d", output[5].shape
+            print "val_vals_2d", output[6].shape
+            print "w_transp_x", output[7].shape
+            print "label", output[8].shape
+            print "ywtx", output[9].shape
+            print "local_sigmoid", output[10].shape
+            print "local_gradient", output[11].shape
 
 
 
@@ -138,5 +198,6 @@ with g.as_default():
         coord.join(threads)
 
         tf.train.SummaryWriter("%s/sgd_sync" % (os.environ.get("TF_LOG_DIR")), sess.graph)
+        sess.close()
 
 
