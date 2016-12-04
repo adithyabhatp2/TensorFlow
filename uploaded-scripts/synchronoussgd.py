@@ -125,12 +125,14 @@ with g.as_default():
             local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
 
             local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, 1, name="sig_1"), val_vals, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
+            local_gradient = tf.reshape(local_gradient, [-1])
 
-            # dense_feature_temp = tf.sparse_to_dense(tf.sparse_tensor_to_dense(index),
-            #                                         [num_features, ],
-            #                                         tf.sparse_tensor_to_dense(value), name="dense_feature_temp")
-            # dense_feature = tf.reshape(dense_feature_temp, [num_features, 1], name="dense_feature")
+            # sparse_index = tf.reshape(index.values, [tf.size(index.values), num_features])
+            zeros = tf.zeros([tf.size(index.values)],  dtype=tf.int64)
+            sparse_index = tf.pack([index.values, zeros], axis=1)
 
+            lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient, shape=[num_features, 1])
+            gradients.append(lg_sparse)
 
             # dense_feature, label = processInputFromFile(serialized_example)
 
@@ -142,8 +144,15 @@ with g.as_default():
             # local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, ones, name="sig_1"), dense_feature, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
             # gradients.append(tf.mul(local_gradient, eta))
 
-    # with tf.device("/job:worker/task:0"):
+    with tf.device("/job:worker/task:0"):
     #     aggregator = tf.add_n(gradients, name="aggr_grad")
+        agg1 = tf.sparse_add(gradients[0], gradients[1])
+        agg2 = tf.sparse_add(gradients[2], gradients[3])
+        agg3 = tf.sparse_add(agg2, gradients[4])
+        agg = tf.sparse_add(agg1, agg3)
+        print "Agg: ", agg
+        w = tf.sparse_add(w, agg)
+
     #     assign_op = w.assign_sub(aggregator)
 
 
@@ -158,7 +167,8 @@ with g.as_default():
         # Effectively, it spins up separate threads to read from the files
         threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
-        for i in range(0, 10):
+        overall_start = time.time()
+        for i in range(0, 100):
             print i
 
             # output = sess.run([dense_feature, label, local_gradient])
@@ -177,22 +187,29 @@ with g.as_default():
             # sess.run(assign_op)
             # print time.time()-start
 
-            output = sess.run([w_sparse, ind_vals, val_vals, w_sparse_1d, w_transp,w_transp_1d, val_vals_2d,wtranspx,label,ywtx, local_sigmoid, local_gradient])
-            print "w_sparse", output[0].shape
-            print "ind_vals", output[1].shape
-            print "val_vals", output[2].shape
-            print "w_sparse_1d", output[3].shape
-            print "w_transp", output[4].shape
-            print "w_transp_1d", output[5].shape
-            print "val_vals_2d", output[6].shape
-            print "w_transp_x", output[7].shape
-            print "label", output[8].shape
-            print "ywtx", output[9].shape
-            print "local_sigmoid", output[10].shape
-            print "local_gradient", output[11].shape
+            # output = sess.run([w_sparse, ind_vals, val_vals, w_sparse_1d, w_transp,w_transp_1d, val_vals_2d,wtranspx,label,ywtx, local_sigmoid, local_gradient, ind_inds, agg, w])
+            # print "w_sparse", output[0].shape
+            # print "ind_vals", output[1].shape
+            # print "val_vals", output[2].shape
+            # print "w_sparse_1d", output[3].shape
+            # print "w_transp", output[4].shape
+            # print "w_transp_1d", output[5].shape
+            # print "val_vals_2d", output[6].shape
+            # print "w_transp_x", output[7].shape
+            # print "label", output[8].shape
+            # print "ywtx", output[9].shape
+            # print "local_sigmoid", output[10].shape
+            # print "local_gradient", output[11].shape
+            # print "ind_inds", output[12].shape
+            # print "agg", output[13].shape
+            # print "new w", output[14].shape
 
-
-
+            # start = time.time()
+            output = sess.run(w)
+            # print time.time() - start
+            # print "w", output
+        overall_end = time.time()
+        print "total time", overall_end-overall_start
 
         coord.request_stop()
         coord.join(threads)
