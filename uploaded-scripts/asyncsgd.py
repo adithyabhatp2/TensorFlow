@@ -8,7 +8,7 @@ FLAGS = tf.app.flags.FLAGS
 tf.logging.set_verbosity(tf.logging.DEBUG)
 
 num_features = 33762578
-eta = 0.01
+eta = 0.1
 resultsFilePath = "/home/ubuntu/gitRepository/TensorFlow/uploaded-scripts/results/async/accuracy.txt"
 lastLogged=0
 
@@ -73,7 +73,7 @@ if not os.path.exists(os.path.dirname(resultsFilePath)):
     os.makedirs(os.path.dirname(resultsFilePath))
 
 with open(resultsFilePath, "w") as f:
-    f.write("Iteration\tAccuracy")
+    f.write("Iteration\tAccuracy\n")
 
 
 g = tf.Graph()
@@ -83,7 +83,9 @@ with g.as_default():
     tf.set_random_seed(1024)
     # creating a model variable on task 0. This is a process running on node vm-14-1
     with tf.device("/job:worker/task:0"):
-        w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals"), name="w_model")
+        #w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals"), name="w_model")
+         w = tf.Variable(tf.random_uniform([num_features, 1], name="random_init_vals"), name="w_model")
+
         count = tf.Variable(tf.zeros([1, 1], dtype=tf.int64), name="count")
 
     # Test start
@@ -224,7 +226,7 @@ with g.as_default():
 
             print time.time()-start
 
-            test_freq = 1000
+            test_freq = 500
             if FLAGS.task_index == 0:
                 if count_int - lastLogged > test_freq:
                     num_tests = 10000
@@ -232,7 +234,7 @@ with g.as_default():
                     num_wrong = 0
                     test_start = time.time()
                     for test_num in xrange(0,num_tests):
-                        if test_num % 100 == 0:
+                        if test_num % 1000 == 0:
                             print "test", test_num
                         output = sess.run(test_correctness)
                         if output[0][0] == True:

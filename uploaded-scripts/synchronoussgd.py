@@ -71,7 +71,7 @@ if not os.path.exists(os.path.dirname(resultsFilePath)):
     os.makedirs(os.path.dirname(resultsFilePath))
 
 with open(resultsFilePath, "w") as f:
-    f.write("Iteration\tAccuracy")
+    f.write("Iteration\tAccuracy\n")
 
 g = tf.Graph()
 
@@ -253,14 +253,14 @@ with g.as_default():
             print time.time() - start
             # print "w", output
 
-            test_freq = 1000
+            test_freq = 500
             if i % test_freq==0:
                 num_tests = 10000
                 num_correct = 0
                 num_wrong = 0
                 test_start = time.time()
                 for test_num in xrange(0,num_tests):
-                    if test_num % 100 == 0:
+                    if test_num % 1000 == 0:
                         print "test", test_num
                     output = sess.run(test_correctness)
                     if output[0][0] == True:
