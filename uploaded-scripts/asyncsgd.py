@@ -2,6 +2,9 @@ import tensorflow as tf
 import os
 import time
 
+tf.app.flags.DEFINE_integer("task_index", 0, "Index of the worker task")
+FLAGS = tf.app.flags.FLAGS
+
 tf.logging.set_verbosity(tf.logging.DEBUG)
 
 num_features = 33762578
@@ -18,7 +21,6 @@ def processInputFromFile(serialized_example):
                                            'value': tf.VarLenFeature(dtype=tf.float32),
                                        }
                                        )
-
     label = features['label']
     index = features['index']
     value = features['value']
@@ -73,9 +75,8 @@ with g.as_default():
     tf.set_random_seed(1024)
     # creating a model variable on task 0. This is a process running on node vm-14-1
     with tf.device("/job:worker/task:0"):
-        w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals", dtype=tf.float32), name="w_model")
+        w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals"), name="w_model")
 
-    gradients = []
     for i in range(0, 5):
         with tf.device("/job:worker/task:%d" % i):
             filename_queue = createFileNameQueues(i)
@@ -86,93 +87,35 @@ with g.as_default():
             # Tensor called serialized_example
             _, serialized_example = reader.read(filename_queue)
 
-            features = tf.parse_single_example(serialized_example,
-                                               features={
-                                                   'label': tf.FixedLenFeature([1], dtype=tf.int64),
-                                                   'index': tf.VarLenFeature(dtype=tf.int64),
-                                                   'value': tf.VarLenFeature(dtype=tf.float32),
-                                               }
-                                               )
+            dense_feature, label = processInputFromFile(serialized_example)
 
-            label = features['label']
-            index = features['index']
-            value = features['value']
-
-            # These print statements are there for you see the type of the following
-            # variables
-            print "label : ", label
-            print ""
-            print "index : ", index
-            print ""
-            print "value : ", value
-            print ""
-
-            # for debug
-            ind_vals = index.values
-            ind_inds = index.indices
-            val_vals = value.values
-
-            val_vals_2d = tf.expand_dims(val_vals,1)
-            w_sparse = tf.gather(w, index.values, name="w_sparse")
-            w_sparse_1d = tf.reshape(w_sparse, [-1], name="w_sparse_1d")
-            w_transp = tf.transpose(w_sparse)
-            w_transp_1d = tf.reshape(w_transp, [-1])
-
-            label = tf.to_float(label, name="label")
-            wtranspx = tf.matmul(w_transp, val_vals_2d, name="wTransX")
+            wtranspx = tf.matmul(tf.transpose(w), dense_feature, name="wTransX")
             ywtx = tf.mul(label, wtranspx, name="ywtx")
             local_sigmoid = tf.sigmoid(ywtx, name="sigmoid")
-            local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
-
-            local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, 1, name="sig_1"), val_vals, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
-            local_gradient = tf.reshape(local_gradient, [-1])
-
-            # sparse_index = tf.reshape(index.values, [tf.size(index.values), num_features])
-            zeros = tf.zeros([tf.size(index.values)],  dtype=tf.int64)
-            sparse_index = tf.pack([index.values, zeros], axis=1)
-
-            lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient, shape=[num_features, 1])
-            gradients.append(lg_sparse)
-
-            # dense_feature, label = processInputFromFile(serialized_example)
-
-            # wtranspx = tf.matmul(tf.transpose(w), dense_feature, name="wTransX")
-            # ywtx = tf.mul(label, wtranspx, name="ywtx")
-            # local_sigmoid = tf.sigmoid(ywtx, name="sigmoid")
-            # local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
-            # ones = tf.ones([num_features, 1])
-            # local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, ones, name="sig_1"), dense_feature, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
-            # gradients.append(tf.mul(local_gradient, eta))
+            local_loss = tf.log(local_sigmoid, name="loss_intermediate")
+            ones = tf.ones([num_features, 1])
+            local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, ones, name="sig_1"), dense_feature, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
 
     with tf.device("/job:worker/task:0"):
-    #     aggregator = tf.add_n(gradients, name="aggr_grad")
-        agg1 = tf.sparse_add(gradients[0], gradients[1])
-        agg2 = tf.sparse_add(gradients[2], gradients[3])
-        agg3 = tf.sparse_add(agg2, gradients[4])
-        agg = tf.sparse_add(agg1, agg3)
-        print "Agg: ", agg
-        w = tf.sparse_add(w, agg)
-
-    #     assign_op = w.assign_sub(aggregator)
+        assign_op = w.assign_sub(local_gradient)
 
 
     # as usual we create a session.
     with tf.Session("grpc://vm-14-1:2222", config=tf.ConfigProto(log_device_placement=True)) as sess:
-    # with tf.Session() as sess:
-
-        sess.run(tf.initialize_all_variables())
+        if FLAGS.task_index == 0:
+            sess.run(tf.initialize_all_variables())
 
         coord = tf.train.Coordinator()
         # this is new command and is used to initialize the queue based readers.
         # Effectively, it spins up separate threads to read from the files
         threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
-        overall_start = time.time()
-        for i in range(0, 100):
+        for i in range(0, 20):
             print i
-
-            # output = sess.run([dense_feature, label, local_gradient])
+            # every time we call run, a new data point is read from the files
+            #output = sess.run([dense_feature, label, local_gradient])
             # print "dense_feature shape : ", output[0].shape
+            # print "sum(dense_feature) : ", sum(output[0])
             # print "label : ", output[1]
             # print "local_gradient shape : ", output[2].shape
 
@@ -182,39 +125,16 @@ with g.as_default():
 
             # output = sess.run(local_loss)
             # print "Local Loss (Error) : ", output[0][0]
+            start = time.time()
+            sess.run(assign_op)
+            print time.time()-start
 
-            # start = time.time()
-            # sess.run(assign_op)
-            # print time.time()-start
 
-            # output = sess.run([w_sparse, ind_vals, val_vals, w_sparse_1d, w_transp,w_transp_1d, val_vals_2d,wtranspx,label,ywtx, local_sigmoid, local_gradient, ind_inds, agg, w])
-            # print "w_sparse", output[0].shape
-            # print "ind_vals", output[1].shape
-            # print "val_vals", output[2].shape
-            # print "w_sparse_1d", output[3].shape
-            # print "w_transp", output[4].shape
-            # print "w_transp_1d", output[5].shape
-            # print "val_vals_2d", output[6].shape
-            # print "w_transp_x", output[7].shape
-            # print "label", output[8].shape
-            # print "ywtx", output[9].shape
-            # print "local_sigmoid", output[10].shape
-            # print "local_gradient", output[11].shape
-            # print "ind_inds", output[12].shape
-            # print "agg", output[13].shape
-            # print "new w", output[14].shape
 
-            # start = time.time()
-            output = sess.run(w)
-            # print time.time() - start
-            # print "w", output
-        overall_end = time.time()
-        print "total time", overall_end-overall_start
 
         coord.request_stop()
         coord.join(threads)
 
-        tf.train.SummaryWriter("%s/sgd_sync" % (os.environ.get("TF_LOG_DIR")), sess.graph)
-        sess.close()
+        tf.train.SummaryWriter("%s/sgd_async" % (os.environ.get("TF_LOG_DIR")), sess.graph)
 
 
