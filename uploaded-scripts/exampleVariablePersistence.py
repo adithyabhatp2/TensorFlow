@@ -34,13 +34,15 @@ with tf.Session("grpc://vm-14-%d:2222" % (FLAGS.task_index + 1), config=config) 
 
     # feel free to increment the loop count, if you want to observe variables for
     # longer durations.
-    for i in range(0, 1000):
+    for i in range(0, 100):
         # session can be run to compute the values of multiple
         # tensors/variables. The variables of interest are provided as a list
         # when invoking run.
         sess.run([assign1, assign2])
         # observe the values in a variable
         print X.eval(), Y.eval()
+
+    print "Local ",FLAGS.task_index
 
     sess.close()
 
