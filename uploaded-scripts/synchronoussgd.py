@@ -5,7 +5,8 @@ import time
 tf.logging.set_verbosity(tf.logging.DEBUG)
 
 num_features = 33762578
-eta = 0.01
+neg_eta = -0.01
+pos_eta = 0.01
 resultsFilePath = "/home/ubuntu/gitRepository/TensorFlow/uploaded-scripts/results/sync/accuracy.txt"
 
 def processInputFromFile(serialized_example):
@@ -81,16 +82,18 @@ with g.as_default():
     tf.set_random_seed(1024)
     # creating a model variable on task 0. This is a process running on node vm-14-1
     with tf.device("/job:worker/task:0"):
+        # w = tf.Variable(tf.random_uniform([num_features, 1], name="random_init_vals", dtype=tf.float32), name="w_model")
         w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals", dtype=tf.float32), name="w_model")
+        # w = tf.Variable(tf.ones([num_features, 1], name="random_init_vals", dtype=tf.float32), name="w_model")
 
-
+    # test start
     with tf.device("/job:worker/task:0"):
         test_filename_queue = tf.train.string_input_producer([
             "/home/ubuntu/gitRepository/TensorFlow/uploaded-scripts/data/criteo-tfr/tfrecords22",
         ], num_epochs=None, name="test_filename_queue")
         test_reader = tf.TFRecordReader()
 
-        _, test_serialized_example = test_reader.read(test_filename_queue)
+        _2, test_serialized_example = test_reader.read(test_filename_queue)
 
         test_features = tf.parse_single_example(test_serialized_example,
                                            features={
@@ -117,8 +120,9 @@ with g.as_default():
         test_wtranspx = tf.matmul(test_w_transp, test_val_vals_2d, name="test_wTransX")
         test_pred = tf.sign(test_wtranspx)
         test_correctness = tf.equal(test_label, test_pred, name="test_correctness")
+    # test end
 
-
+    # train start
     gradients = []
     for i in range(0, 5):
         with tf.device("/job:worker/task:%d" % i):
@@ -163,19 +167,19 @@ with g.as_default():
             w_transp_1d = tf.reshape(w_transp, [-1])
 
             label = tf.to_float(label, name="label")
+
             wtranspx = tf.matmul(w_transp, val_vals_2d, name="wTransX")
             ywtx = tf.mul(label, wtranspx, name="ywtx")
             local_sigmoid = tf.sigmoid(ywtx, name="sigmoid")
-            local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
 
             local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, 1, name="sig_1"), val_vals, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
-            local_gradient = tf.reshape(local_gradient, [-1])
+            local_gradient2 = tf.mul(local_gradient, neg_eta, name="neg_eta_mult")
+            local_gradient3 = tf.reshape(local_gradient2, [-1])
 
-            # sparse_index = tf.reshape(index.values, [tf.size(index.values), num_features])
             zeros = tf.zeros([tf.size(index.values)],  dtype=tf.int64)
             sparse_index = tf.pack([index.values, zeros], axis=1)
 
-            lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient, shape=[num_features, 1])
+            lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient3, shape=[num_features, 1])
             gradients.append(lg_sparse)
 
             # dense_feature, label = processInputFromFile(serialized_example)
@@ -189,20 +193,18 @@ with g.as_default():
             # gradients.append(tf.mul(local_gradient, eta))
 
     with tf.device("/job:worker/task:0"):
-    #     aggregator = tf.add_n(gradients, name="aggr_grad")
         agg1 = tf.sparse_add(gradients[0], gradients[1])
         agg2 = tf.sparse_add(gradients[2], gradients[3])
         agg3 = tf.sparse_add(agg2, gradients[4])
         agg = tf.sparse_add(agg1, agg3)
         print "Agg: ", agg
         w = tf.sparse_add(w, agg)
+        # aggregator = tf.add_n(gradients, name="aggr_grad")
+        #     assign_op = w.assign_sub(aggregator)
 
-    #     assign_op = w.assign_sub(aggregator)
 
 
-    # as usual we create a session.
     with tf.Session("grpc://vm-14-1:2222", config=tf.ConfigProto(log_device_placement=True)) as sess:
-    # with tf.Session() as sess:
 
         sess.run(tf.initialize_all_variables())
 
@@ -253,7 +255,7 @@ with g.as_default():
             print time.time() - start
             # print "w", output
 
-            test_freq = 500
+            test_freq = 100
             if i % test_freq==0:
                 num_tests = 10000
                 num_correct = 0

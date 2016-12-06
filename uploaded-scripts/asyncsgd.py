@@ -9,6 +9,7 @@ tf.logging.set_verbosity(tf.logging.DEBUG)
 
 num_features = 33762578
 eta = 0.1
+neg_eta = -0.01
 resultsFilePath = "/home/ubuntu/gitRepository/TensorFlow/uploaded-scripts/results/async/accuracy.txt"
 lastLogged=0
 
@@ -83,9 +84,8 @@ with g.as_default():
     tf.set_random_seed(1024)
     # creating a model variable on task 0. This is a process running on node vm-14-1
     with tf.device("/job:worker/task:0"):
-        #w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals"), name="w_model")
-         w = tf.Variable(tf.random_uniform([num_features, 1], name="random_init_vals"), name="w_model")
-
+        #w = tf.Variable(tf.random_uniform([num_features, 1], name="random_init_vals"), name="w_model")
+        w = tf.Variable(tf.random_uniform([num_features, 1], minval=-10, maxval=10, name="random_init_vals"), name="w_model")
         count = tf.Variable(tf.zeros([1, 1], dtype=tf.int64), name="count")
 
     # Test start
@@ -95,7 +95,7 @@ with g.as_default():
         ], num_epochs=None, name="test_filename_queue")
         test_reader = tf.TFRecordReader()
 
-        _, test_serialized_example = test_reader.read(test_filename_queue)
+        _2, test_serialized_example = test_reader.read(test_filename_queue)
 
         test_features = tf.parse_single_example(test_serialized_example,
                                                 features={
@@ -180,17 +180,18 @@ with g.as_default():
         local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
 
         local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, 1, name="sig_1"), val_vals, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
-        local_gradient = tf.reshape(local_gradient, [-1])
+        local_gradient2 = tf.mul(local_gradient, neg_eta, name="neg_eta_mult")
+        local_gradient3 = tf.reshape(local_gradient2, [-1])
 
         # sparse_index = tf.reshape(index.values, [tf.size(index.values), num_features])
         zeros = tf.zeros([tf.size(index.values)], dtype=tf.int64)
         sparse_index = tf.pack([index.values, zeros], axis=1)
 
-        lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient, shape=[num_features, 1])
+        lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient3, shape=[num_features, 1])
 
     with tf.device("/job:worker/task:0"):
         w = tf.sparse_add(w, lg_sparse)
-        count = count.assign_add(tf.ones([1,1], dtype=tf.int64))
+        count = count.assign_add(tf.ones([1, 1], dtype=tf.int64))
     # Train end
 
     # as usual we create a session.
@@ -219,6 +220,7 @@ with g.as_default():
 
             # output = sess.run(local_loss)
             # print "Local Loss (Error) : ", output[0][0]
+
             start = time.time()
             output = sess.run([w, count])
             count_int = output[1][0][0]
