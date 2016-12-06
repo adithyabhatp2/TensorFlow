@@ -162,6 +162,8 @@ with g.as_default():
         print "value : ", value
         print ""
 
+        label = tf.to_float(label, name="label")
+
         # for debug
         ind_vals = index.values
         ind_inds = index.indices
@@ -169,28 +171,30 @@ with g.as_default():
 
         val_vals_2d = tf.expand_dims(val_vals, 1)
         w_sparse = tf.gather(w, index.values, name="w_sparse")
-        w_sparse_1d = tf.reshape(w_sparse, [-1], name="w_sparse_1d")
-        w_transp = tf.transpose(w_sparse)
-        w_transp_1d = tf.reshape(w_transp, [-1])
+        # w_sparse_1d = tf.reshape(w_sparse, [-1], name="w_sparse_1d")
 
-        label = tf.to_float(label, name="label")
+        w_transp = tf.transpose(w_sparse)
+        # w_transp_1d = tf.reshape(w_transp, [-1])
+
         wtranspx = tf.matmul(w_transp, val_vals_2d, name="wTransX")
         ywtx = tf.mul(label, wtranspx, name="ywtx")
         local_sigmoid = tf.sigmoid(ywtx, name="sigmoid")
-        local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
+        # local_loss = tf.log(local_sigmoid, name="loss_intermediate")  # tensor?
 
-        local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, 1, name="sig_1"), val_vals, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
+        local_gradient = tf.mul(tf.mul(tf.sub(local_sigmoid, 1, name="sig_1"), val_vals_2d, name="x_sig_1"), label, name="local_gradient_yx_sig_1")
         local_gradient2 = tf.mul(local_gradient, neg_eta, name="neg_eta_mult")
+
         local_gradient3 = tf.reshape(local_gradient2, [-1])
-
         # sparse_index = tf.reshape(index.values, [tf.size(index.values), num_features])
-        zeros = tf.zeros([tf.size(index.values)], dtype=tf.int64)
-        sparse_index = tf.pack([index.values, zeros], axis=1)
-
-        lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient3, shape=[num_features, 1])
+        # zeros = tf.zeros([tf.size(index.values)], dtype=tf.int64)
+        # sparse_index = tf.pack([index.values, zeros], axis=1)
+        #
+        # lg_sparse = tf.SparseTensor(indices=sparse_index, values=local_gradient3, shape=[num_features, 1])
 
     with tf.device("/job:worker/task:0"):
-        w = tf.sparse_add(w, lg_sparse)
+        # w = tf.sparse_add(w, lg_sparse)
+        # w = tf.scatter_sub(w, index.values, local_gradient2)
+        w = tf.scatter_add(w, index.values, local_gradient2)
         count = count.assign_add(tf.ones([1, 1], dtype=tf.int64))
     # Train end
 
@@ -228,9 +232,9 @@ with g.as_default():
 
             print time.time()-start
 
-            test_freq = 500
+            test_freq = 100
             if FLAGS.task_index == 0:
-                if count_int - lastLogged > test_freq:
+                if count_int - lastLogged > test_freq or i==0:
                     num_tests = 10000
                     num_correct = 0
                     num_wrong = 0
